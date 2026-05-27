@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="mediaqueries.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Sanju R</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Sanju R</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./Assets/Profile-pic-sanju.png" alt="Sanju profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__part__p1">Hello, I'm</p>
+        <h1 class="title">Sanju R</h1>
+        <p class="section__part__p2">Software Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./Assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button
+            class="btn btn-color-1"
+            onclick="location.href = './#contact'"
+          >
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./Assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href = 'https://www.linkedin.com/in/crsanju/'"
+          />
+          <img
+            src="./Assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href = 'https://github.com/CRSanju'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get to know more</p>
+      <h1 class="title">About me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./Assets/About-pic-sanju.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./Assets/experience.png"
+                alt="experience-icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>
+                <!-- 2+ years <br /> -->
+                Software Developer
+              </p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./Assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>
+                B.Tech Computer Science <br />
+                Cyber Security
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Passionate and detail-oriented Full Stack Developer with hands-on
+              experience building scalable web applications using Java, Spring
+              Boot, Django, React, PostgreSQL, HTML, CSS, and JavaScript.
+              Skilled in developing REST APIs, authentication systems,
+              responsive user interfaces, and full-stack deployment workflows.
+              Built and deployed multiple real-world projects including
+              ecommerce, productivity, and food-ordering applications. Strong
+              problem-solving abilities with a solid foundation in Data
+              Structures & Algorithms, clean coding practices, and modern
+              software development principles. Continuously learning and
+              improving through practical project development and real-world
+              implementation.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href = './#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+
+        <div class="skill-row">
+          <h3 class="skill-row-title">Frontend</h3>
+          <div class="skill-row-items">
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>HTML5</h3><p>Advanced</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>CSS3</h3><p>Advanced</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>JavaScript</h3><p>Advanced</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Responsive Design</h3><p>Advanced</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Flexbox &amp; Grid</h3><p>Advanced</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>React.js</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>DOM Manipulation</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Bootstrap</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Fetch API</h3><p>Intermediate</p></div></div>
+          </div>
+        </div>
+
+        <div class="skill-row">
+          <h3 class="skill-row-title">Backend</h3>
+          <div class="skill-row-items">
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Java</h3><p>Advanced</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Spring Boot</h3><p>Advanced</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>REST APIs</h3><p>Advanced</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Python</h3><p>Advanced</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Django</h3><p>Advanced</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>JWT Authentication</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Spring Security</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Hibernate / JPA</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Email API Integration</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>MVC Architecture</h3><p>Intermediate</p></div></div>
+          </div>
+        </div>
+
+        <div class="skill-row">
+          <h3 class="skill-row-title">Database</h3>
+          <div class="skill-row-items">
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>PostgreSQL</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>MySQL</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>SQLite</h3><p>Intermediate</p></div></div>
+          </div>
+        </div>
+
+        <div class="skill-row">
+          <h3 class="skill-row-title">Tools &amp; Platforms</h3>
+          <div class="skill-row-items">
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>VS Code</h3><p>Advanced</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Git</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>GitHub</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Postman</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Render</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Vercel</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Docker</h3><p>Beginner</p></div></div>
+          </div>
+        </div>
+
+        <div class="skill-row">
+          <h3 class="skill-row-title">CS Fundamentals</h3>
+          <div class="skill-row-items">
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>OOPs</h3><p>Advanced</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>DSA</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>DBMS</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Computer Networks</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Operating Systems</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Problem Solving</h3><p>Intermediate</p></div></div>
+          </div>
+        </div>
+
+        <div class="skill-row">
+          <h3 class="skill-row-title">Cyber Security</h3>
+          <div class="skill-row-items">
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Security Fundamentals</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Computer Networking</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Auth &amp; Authorization</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>HTTP / HTTPS</h3><p>Intermediate</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Network Security</h3><p>Beginner</p></div></div>
+            <div class="skill-item"><img src="./Assets/checkmark.png" alt="check" class="icon" /><div><h3>Web Security</h3><p>Beginner</p></div></div>
+          </div>
+        </div>
+
+      </div>
+      <img
+        src="./Assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href = './#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Assets/Project-1.png"
+                alt="project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project one</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                ondblclick="
+                  location.href = 'https://github.com/CRSanju/sales-savvy'
+                "
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                ondblclick="
+                  location.href = 'https://sales-savvy-bfxb.onrender.com'
+                "
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Assets/Project-2.png"
+                alt="project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                ondblclick="location.href = 'https://github.com/CRSanju/Cravio'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                ondblclick="location.href = 'https://cravio-zz6e.onrender.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./Assets/Project-3.png"
+                alt="project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                ondblclick="
+                  location.href = 'https://github.com/CRSanju/Planora'
+                "
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                ondblclick="location.href = 'https://planora-blond.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href = './#projects'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./Assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:rsanju.3312@gmail.com">rsanju.3312@gmail.com</a>
+          </p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./Assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/crsanju/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2026 Sanju R, All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
